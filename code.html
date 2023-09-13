@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym website</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
+<!-- the above link is to change the font style copied from google fonts -->
+
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* CSS Reset */
+    body {
+      margin: 0px;
+      padding: 0px;
+      background: url("https://media.istockphoto.com/id/1132086660/photo/side-view-of-beautiful-muscular-woman-running-on-treadmill.jpg?s=612x612&w=0&k=20&c=5Vq_BJjG7sbIyKIP-Adu0pChReDXm0dC7BVPvto2M0I=");
+      /* image address */
+
+      font-family: 'Phudu', cursive;
+      
+    }
+
+    .left{
+        color: BLACK;
+        /* border:2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 18px;/*so that it goes up*/
+       left:34px;
+    }
+
+    .left img{
+      width: 150px;
+      filter :invert(100%)/*if image is white it becomes white and vice versa*/
+    }
+
+    .left div{
+      text-align: center;/*text in centre*/
+    }
+  
+    .mid{
+        color:white;
+        /* border:2px solid greenyellow; */
+        display: block;
+        width: 40%;
+        margin:12px auto;/*to bring it to centre*/
+    }
+
+    .right{
+        color:rgb(220, 203, 203);
+        position: absolute;
+        top: 18px;/*so that it goes up*/
+        right:34px;
+        /* border:2px solid yellow; */
+        display: inline-block;/*to bring it in one line*/
+    }
+
+    .btn{
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      padding: 4px 14px;
+      border:2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .btn:hover{
+      background-color: grey;
+    }
+
+    .navbar{
+      font: bold;
+      display: inline-block;
+    }
+
+    .navbar li{
+      display: inline-block;
+      font-size: 17px;
+    }
+
+    .navbar li a{
+      color: white;
+      text-decoration: none;/*to remove the under lined line*/
+      padding: 34px 20px;
+    }
+
+    .navbar li a:hover, .navbar li a.active{/*Activities to be done when we point the cursor*/
+      /* active means whichever page is currently opened that title is underlined */
+      text-decoration: underline;
+      color: grey;
+    }
+
+    .container{
+      border: 2px solid green;
+      margin: 150px 80px;
+      padding: 50px 50px;
+      width: 33%;
+      border-radius: 10px;
+      font: bolder;
+      
+    }
+
+    .form-group input{
+      text-align: center;
+      display: block;
+      width: 500px;
+      padding: 6px;
+      border: 2px solid black;
+      font-size: medium;
+      border-radius: 20px;
+      font-family: 'Phudu', cursive;
+      margin: 11px;
+    }
+
+    .container h1{
+      text-align: center;
+      color: rgb(171, 227, 59);
+    }
+
+    .container button{
+      display: block;
+      width: 23%;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <header class="header">
+        <!-- centre box for logo -->
+        <div class="mid">
+            <ul class="navbar">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Fitness Centre</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+         <!-- left box for navigation -->
+         <div class="left">
+           <img src="https://as1.ftcdn.net/v2/jpg/03/86/32/06/1000_F_386320616_JjRXIvAJBzwrXII3kjiGHAQ4gNmfU02e.jpg" alt="">
+           <div>SPARK FITNESS</div>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Contact us</button>
+            <button class="btn">Email us</button>
+        </div>
+       <div class="container">
+        <h1>Join the best gym of the city now</h1>
+        <form action="noaction.php">
+          <div class="form-group">
+          <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Loaction">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <button class="btn">Submit</button>
+        </form>
+       </div>
+    </header>
+  </body>
+</html>
